@@ -1,3 +1,3 @@
-# Autoencoder
+# Special Topics - ECE 491
 
-### Training the basic neural network
+
