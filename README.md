@@ -19,3 +19,10 @@ Professor Jalali's paper is mainly a theoretical framework of what I want to imp
 ### Recovery Algorithms
 
 One of the ways to get the signal (or image in this case) back from speckle noise is by Projected Gradient Descent. The cost function in this case would be 
+
+
+### Quetions to ask Professor: 
+
+- How to implement the algorithm 1 from page 13. 
+- How to properly input an image as a vector so we can "add" speckle noise to it.
+- How to create "speckle noise" as a means to test. I want to get an image and show how it changes with the effect of speckle noise.
