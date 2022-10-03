@@ -223,4 +223,5 @@ torch.save(unet.state_dict(),'Unet-trained.pkl'
 - first part is good
 - need to fix the image patch part (going back to image)
 - how to check if my autoencoder is working proplerly and steps after that 
+- how to define autoencoder
 - what to do after that? implementing the algorithms in code
