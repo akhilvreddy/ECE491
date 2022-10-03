@@ -15,13 +15,13 @@ In essence, we are trying to remove the granular part of the image for better re
 ### Graphical Depiction
 In this case, we are talking about images and images having speckle noise, but I would first like to show speckle noise's effect on signals. Since images can be represented as vectors, this would be a good way to visualize what is happening. Since I am going to be converting the image we are working with to patches and then later to a vector, it is good to see what changes happen to a single vector. 
 
-The noise formula is the following: $$\textbf{y} = AX_o\textbf{w} + \textbf{z}$$
+The noise formula is modeled by the following: $$\textbf{y} = AX_o\textbf{w} + \textbf{z}$$
 
 Here is what all the variables are: 
 - $\textbf{y}$ : This is the final measuremetn of the signal we end up with, and is the one that we see. 
 - $A$ : This is a multiplicative constant (can be in the form of a matrix)/
 - $X_o$ : This is the original signal in the form of a matrix. The signal elements are on the diagonal of a square matrix.
-- $\textbf{w}$ : The speckle noise, this is the main thign we are dealing with. 
+- $\textbf{w}$ : The speckle noise, this is the main issue we are dealing with. 
 - $\textbf{z}$ : This is the white guasian additive noise. 
 
 We can generate random values for speckle noise, additive white gaussian noise, and the original signal to see a sample comparison between $X_o$ and $y$. 
