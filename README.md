@@ -26,6 +26,28 @@ Here is what all the variables are:
 
 We can generate random values for speckle noise, additive white gaussian noise, and the original signal to see a sample comparison between $X_o$ and $y$. 
 
+We can take $w$ as some random multiplicative values, ranging between 0.8-1.2 because we don't want too much difference, but just enough to see. 
+We can take $X_o$ as the matrix of the array [5.4, 7.65, 9.4, 3.4] as spread along its diagonal. This was randomly generated.
+We can take $z$ as a guassian random distributed noise:
+Ignoring $A$ for now, we can just set it equal to 1.
+
+We end up with the following: 
+
+
+
+### Turning an Image into a vector & image patches
+The images we are working are pretty big and high in quality so we take patches of them in order to do the analysis. This is how we take the patches in python, using the _scikit learn_ library: 
+```
+from sklearn.datasets import load_sample_image
+from sklearn.feature_extraction import image
+
+sample_image = load_sample_image("test1.jpg")
+print('Image shape: {}'.format(sample_image.shape)) 
+```
+> "test1.jpg" was imported from desktop, in this case it was the complete image
+
+I also consulted the following video: https://www.youtube.com/watch?v=7IL7LKSLb9I.
+
 
 ## Next Steps
 
@@ -35,6 +57,10 @@ Professor Jalali's paper is mainly a theoretical framework of what I want to imp
 
 One of the ways to get the signal (or image in this case) back from speckle noise is by Projected Gradient Descent. The cost function in this case would be 
 
+
+### Autoencoders
+
+Autoencoders are the 
 
 ### Quetions to ask Professor: 
 
