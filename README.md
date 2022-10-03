@@ -6,7 +6,7 @@ The main goal of this research is to recover signals in the presence of Speckle 
 ## Problem 
 Speckle noise is defined as "granular noise texture degrading the quality as a consequence of interference among wavefronts in coherent imaging systems". This essentially means that it is something that is degrading the image quality. Here is an example: 
 
-<img src="https://d3i71xaburhd42.cloudfront.net/e7160408b2f36f582caf9c6e1714f98415126469/2-Figure1-1.png" alt="Speckle Noise Image" class="center">
+<img src="https://github.com/akhilvreddy/ECE491/blob/main/2-Figure1-1.png" alt="Speckle Noise Image" class="right">
 
 The goal here is to get from an image that looks like the one on the right (which is what we currently get in SAR and OCT imaging) to something like the image on the left. 
 
