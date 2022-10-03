@@ -46,6 +46,16 @@ print('Image shape: {}'.format(sample_image.shape))
 ```
 > "test1.jpg" was imported from desktop, in this case it was the complete image
 
+For one of the images I was dealing with, after running this script, I ended up with the following: 
+
+[[[174 201 231],[174 201 231]],[[173 200 230],[173 200 230]]]
+
+These numbers correspond to the ___ of the image. 
+
+*QUESTION*
+
+how to go from the vector back to the image itself?
+
 I also consulted the following video: https://www.youtube.com/watch?v=7IL7LKSLb9I.
 
 
@@ -62,6 +72,9 @@ One of the ways to get the signal (or image in this case) back from speckle nois
 
 Autoencoders are the biggest tools that allow us to solve inverse problems. The way we are going to solve the vector equation is by trying to inverse it, kind of like an algebraic equation, but we cannot do the same elementary operations for a vector equation involving matrices. 
 
+```
+```
+
 ### Quetions to ask Professor: 
 
 - How to implement the algorithm 1 from page 13. 
@@ -70,3 +83,11 @@ Autoencoders are the biggest tools that allow us to solve inverse problems. The 
 
 
 - how to make sure my autoencoder is working well?
+
+
+
+#Progress (10/3)
+- first part is good
+- need to fix the image patch part (going back to image)
+- how to check if my autoencoder is working proplerly and steps after that 
+- what to do after that? implementing the algorithms in code
