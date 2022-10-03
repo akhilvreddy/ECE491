@@ -219,7 +219,7 @@ torch.save(unet.state_dict(),'Unet-trained.pkl'
 
 
 
-#Progress (10/3)
+# Progress (10/3)
 - first part is good
 - need to fix the image patch part (going back to image)
 - how to check if my autoencoder is working proplerly and steps after that 
