@@ -60,7 +60,7 @@ One of the ways to get the signal (or image in this case) back from speckle nois
 
 ### Autoencoders
 
-Autoencoders are the 
+Autoencoders are the biggest tools that allow us to solve inverse problems. The way we are going to solve the vector equation is by trying to inverse it, kind of like an algebraic equation, but we cannot do the same elementary operations for a vector equation involving matrices. 
 
 ### Quetions to ask Professor: 
 
