@@ -24,11 +24,11 @@ In this case, we are talking about images and images having speckle noise, but I
 The noise formula is modeled by the following: $$\textbf{y} = AX_o\textbf{w} + \textbf{z}$$
 
 Here is what all the variables are: 
-- $\textbf{y}$ : This is the final measuremetn of the signal we end up with, and is the one that we see. 
-- $A$ : This is a multiplicative constant (can be in the form of a matrix)/
+- $\textbf{y}$ : This is the final measurement of the signal we end up with, and is the one that we see. 
+- $A$ : This is a multiplicative constant (can be in the form of a matrix).
 - $X_o$ : This is the original signal in the form of a matrix. The signal elements are on the diagonal of a square matrix.
 - $\textbf{w}$ : The speckle noise, this is the main issue we are dealing with. 
-- $\textbf{z}$ : This is the white guasian additive noise. 
+- $\textbf{z}$ : This is the white gaussian additive noise. 
 
 ### Test vector
 We can generate random values for speckle noise, additive white gaussian noise, and the original signal to see a sample comparison between $X_o$ and $y$. 
@@ -42,12 +42,27 @@ Ignoring $A$ for now, we can just set it equal to 1.
 
 We end up with the following: 
 ```
+# IN PYTHON 3
+
+import matplotlib.pyplot as plt
 import numpy as np
 
 list1 = []
 list2 = []
-```
 
+# for the additive noise, we have to use the random guassian variable function
+# for the multiplicative noise, we have to choose 
+
+additiveWhiteGuassianNoise = 
+multiplicativeSpeckleNoise = 
+
+# calculate your functions here
+
+plt.plot(xpoints, ypoints)
+plt.show()
+```
+The plots look like the following: 
+- ***paste the images here from desktop***
 
 ### Test image (converting image to vector using image patches)
 The images we are working are pretty big and high in quality so we take patches of them in order to do the analysis. This is how we take the patches in python, using the _scikit learn_ library: 
@@ -60,24 +75,32 @@ print('Image shape: {}'.format(sample_image.shape))
 ```
 > "test1.jpg" was imported from desktop, in this case it was the complete image
 
+> saved the patches to device
+
 For one of the images I was dealing with, after running this script, I ended up with the following: 
 
 [[[174 201 231],[174 201 231]],[[173 200 230],[173 200 230]]]
 
-These numbers correspond to the ___ of the image. 
+These numbers correspond to the corresponding pixelated part of the image. 
 
-*QUESTION*
+Here are some examples with the images and their corresponding vectorized patches: 
 
-how to go from the vector back to the image itself?
+***add the examples here***
 
-I also consulted the following video: https://www.youtube.com/watch?v=7IL7LKSLb9I.
+### Going backwards (Vectorized Patches to Image Patches)
 
+***add results here from desktop***
 
 ## Getting to our result
 
 Professor Jalali's paper is mainly a theoretical framework of what I want to implement in code. The vector operations and such are the things I want to physically impelment by using actual images. The way I am doing is this by the following: 
 
 ### Autoencoders
+Autoencoders don't have a specific defintion but they are capable of reducing the data dimensions by ignoring noise in the data. It will then expand the data out agian to the dimensions of the initial dataset. There are usually four components inside an autoencoder, all of these combined make it up.
+- Encoder
+- Bottleneck
+- Decoder
+- Reconstruction Loss
 
 Autoencoders are the biggest tools that allow us to solve inverse problems. The way we are going to solve the vector equation is by trying to inverse it, kind of like an algebraic equation, but we cannot do the same elementary operations for a vector equation involving matrices. 
 
@@ -272,31 +295,22 @@ By running through both of these for-loops we are inching closer towards an answ
 ### Simulating our Results
 
 #### Mean Squared Error (MSE) vs. n
-
+- this shows how accurate the work is
 
 
 ## Analysis of Results
 
 
-
 ### Future ideas/work
 
 
-
-
 ### Quetions to ask Professor: 
-
-- How to properly input an image as a vector so we can "add" speckle noise to it.
-- How to create "speckle noise" as a means to test. I want to get an image and show how it changes with the effect of speckle noise.
-
-
+- what is recovery usign GFs?
 - how to make sure my autoencoder is working well?
+- talk a little about the algorithm and what is happening there?
+- what is each part in the 
 
-
-
-# Progress (10/3)
-- first part is good
-- need to fix the image patch part (going back to image)
+# Progress (10/12)
 - how to check if my autoencoder is working proplerly and steps after that 
-- how to define autoencoder
-- what to do after that? implementing the algorithms in code
+- implementing the PGD algorithm
+
