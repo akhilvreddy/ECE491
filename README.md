@@ -222,6 +222,9 @@ torch.save(unet.state_dict(),'Unet-trained.pkl'
 
 One of the ways to get the signal (or image in this case) back from speckle noise is by Projected Gradient Descent. The cost function in this case would be 
 
+#### Recovery using Generative Functions (GFs)
+
+Before getting into other more complicated algorithms, I want to go over others. Recovery using GFs is used for 
 
 
 #### Projected Gradient Descent (PGD)
