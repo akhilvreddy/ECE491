@@ -230,14 +230,14 @@ for epoch in range(EPOCH):
         #running in the neural network
         output=unet(decoded)
         loss=loss_func(output,b_y)
-        optimizer.zero_grad()#initialize the optimizer
+        optimizer.zero_grad() #initialize the optimizer
         loss.backward()
         optimizer.step()
 
         if step%40==0:
             print('Epoch:',epoch, '| tran loss : %.4f' % loss.data.cpu().numpy())
 
-torch.save(unet.state_dict(),'Unet-trained.pkl'
+torch.save(unet.state_dict(),'Unet-trained.pkl')
 ```
 
 
