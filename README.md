@@ -97,10 +97,14 @@ Professor Jalali's paper is mainly a theoretical framework of what I want to imp
 
 ### Autoencoders
 Autoencoders don't have a specific defintion but they are capable of reducing the data dimensions by ignoring noise in the data. It will then expand the data out agian to the dimensions of the initial dataset. There are usually four components inside an autoencoder, all of these combined make it up.
-- Encoder: This does the 
-- Bottleneck: Shrinks the 
+- Encoder  
+  * In which the model learns how to reduce the input dimensions and compress the input data into an encoded representation.
+- Bottleneck 
+   * The layer that contains the compressed representation of the input data. This is the lowest possible dimensions of the input data.
 - Decoder
+  * In which the model learns how to reconstruct the data from the encoded representation to be as close to the original input as possible.
 - Reconstruction Loss
+  * the method that measures measure how well the decoder is performing and how close the output is to the original input.
 
 Autoencoders are the biggest tools that allow us to solve inverse problems. The way we are going to solve the vector equation is by trying to inverse it, kind of like an algebraic equation, but we cannot do the same elementary operations for a vector equation involving matrices. 
 
