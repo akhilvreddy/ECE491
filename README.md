@@ -266,13 +266,23 @@ By running through both of these for-loops we are inching closer towards an answ
 </p>
 
 
+### Simulating our Results
+
+#### Mean Squared Error (MSE) vs. n
+
+
+
+## Analysis of Results
+
+
+
+### Future ideas/work
 
 
 
 
 ### Quetions to ask Professor: 
 
-- How to implement the algorithm 1 from page 13. 
 - How to properly input an image as a vector so we can "add" speckle noise to it.
 - How to create "speckle noise" as a means to test. I want to get an image and show how it changes with the effect of speckle noise.
 
