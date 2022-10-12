@@ -6,13 +6,19 @@ The main goal of this research is to recover signals in the presence of Speckle 
 ## Problem 
 Speckle noise is defined as "granular noise texture degrading the quality as a consequence of interference among wavefronts in coherent imaging systems". This essentially means that it is something that is degrading the image quality. Here is an example: 
 
-<center><img src="https://github.com/akhilvreddy/ECE491/blob/main/2-Figure1-1.png" class="center" alt="CH Logo" height="120" width="350"></center>
+<p align="center">
+  <img 
+    width="504"
+    height="228"
+    src="https://github.com/akhilvreddy/ECE491/blob/main/2-Figure1-1.png"
+  >
+</p>
 
 The goal here is to get from an image that looks like the one on the right (which is what we currently get in SAR and OCT imaging) to something like the image on the left. 
 
 In essence, we are trying to remove the granular part of the image for better resolution.  
 
-### Graphical Depiction
+## Graphical Depiction
 In this case, we are talking about images and images having speckle noise, but I would first like to show speckle noise's effect on signals. Since images can be represented as vectors, this would be a good way to visualize what is happening. Since I am going to be converting the image we are working with to patches and then later to a vector, it is good to see what changes happen to a single vector. 
 
 The noise formula is modeled by the following: $$\textbf{y} = AX_o\textbf{w} + \textbf{z}$$
@@ -24,6 +30,7 @@ Here is what all the variables are:
 - $\textbf{w}$ : The speckle noise, this is the main issue we are dealing with. 
 - $\textbf{z}$ : This is the white guasian additive noise. 
 
+### Test vector
 We can generate random values for speckle noise, additive white gaussian noise, and the original signal to see a sample comparison between $X_o$ and $y$. 
 
 We can take $w$ as some random multiplicative values, ranging between 0.8-1.2 because we don't want too much difference, but just enough to see. 
@@ -42,8 +49,7 @@ list2 = []
 ```
 
 
-
-### Turning an Image into a vector & image patches
+### Test image (converting image to vector using image patches)
 The images we are working are pretty big and high in quality so we take patches of them in order to do the analysis. This is how we take the patches in python, using the _scikit learn_ library: 
 ```
 from sklearn.datasets import load_sample_image
@@ -81,7 +87,7 @@ One of the ways to get the signal (or image in this case) back from speckle nois
 Autoencoders are the biggest tools that allow us to solve inverse problems. The way we are going to solve the vector equation is by trying to inverse it, kind of like an algebraic equation, but we cannot do the same elementary operations for a vector equation involving matrices. 
 
 
-## How does this work
+#### PGD Gradient Descent
 
 
 ```
