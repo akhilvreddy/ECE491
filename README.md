@@ -97,8 +97,8 @@ Professor Jalali's paper is mainly a theoretical framework of what I want to imp
 
 ### Autoencoders
 Autoencoders don't have a specific defintion but they are capable of reducing the data dimensions by ignoring noise in the data. It will then expand the data out agian to the dimensions of the initial dataset. There are usually four components inside an autoencoder, all of these combined make it up.
-- Encoder
-- Bottleneck
+- Encoder: This does the 
+- Bottleneck: Shrinks the 
 - Decoder
 - Reconstruction Loss
 
