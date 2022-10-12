@@ -257,6 +257,13 @@ The X_t matrix gets updated from this everytime.
 
 By running through both of these for-loops we are inching closer towards an answer everytime. The main line that is getting us to reduce our cost-function is: 
 
+<p align="center">
+  <img 
+    width="708"
+    height="78"
+    src="https://github.com/akhilvreddy/ECE491/blob/main/pic2.png"
+  >
+</p>
 
 
 
