@@ -6,7 +6,7 @@ The main goal of this research is to recover signals in the presence of Speckle 
 ## Problem 
 Speckle noise is defined as "granular noise texture degrading the quality as a consequence of interference among wavefronts in coherent imaging systems". This essentially means that it is something that is degrading the image quality. Here is an example: 
 
-<img src="https://github.com/akhilvreddy/ECE491/blob/main/2-Figure1-1.png" alt="Speckle Noise Image" class="right">
+<center><img src="https://github.com/akhilvreddy/ECE491/blob/main/2-Figure1-1.png" class="center" alt="CH Logo" height="120" width="350"></center>
 
 The goal here is to get from an image that looks like the one on the right (which is what we currently get in SAR and OCT imaging) to something like the image on the left. 
 
@@ -31,7 +31,15 @@ We can take $X_o$ as the matrix of the array [5.4, 7.65, 9.4, 3.4] as spread alo
 We can take $z$ as a guassian random distributed noise:
 Ignoring $A$ for now, we can just set it equal to 1.
 
+* Here, I am converting all of the lists to python vectors so that we can do operations on them.
+
 We end up with the following: 
+```
+import numpy as np
+
+list1 = []
+list2 = []
+```
 
 
 
@@ -71,6 +79,10 @@ One of the ways to get the signal (or image in this case) back from speckle nois
 ### Autoencoders
 
 Autoencoders are the biggest tools that allow us to solve inverse problems. The way we are going to solve the vector equation is by trying to inverse it, kind of like an algebraic equation, but we cannot do the same elementary operations for a vector equation involving matrices. 
+
+
+## How does this work
+
 
 ```
 import torch
@@ -207,6 +219,9 @@ for epoch in range(EPOCH):
 
 torch.save(unet.state_dict(),'Unet-trained.pkl'
 ```
+
+
+
 
 ### Quetions to ask Professor: 
 
