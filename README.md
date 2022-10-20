@@ -267,7 +267,7 @@ Bo = A(Xo)^2(A^T)
 for t = 1:T do 
   for i = 1:n do
   
-  s(t, i) = somethingsomething
+  s(t, i) = *some algorithmic step*
   
   end 
   
@@ -289,8 +289,8 @@ By running through both of these for-loops we are inching closer towards an answ
 
 <p align="center">
   <img 
-    width="708"
-    height="78"
+    width="508"
+    height="48"
     src="https://github.com/akhilvreddy/ECE491/blob/main/pic2.png"
   >
 </p>
@@ -299,7 +299,9 @@ By running through both of these for-loops we are inching closer towards an answ
 ### Simulating our Results
 
 #### Mean Squared Error (MSE) vs. n
-- this shows how accurate the work is
+- This shows how accurate the denoising algorithm is. In the paper, we can clearly see that there is a negative-linear correspondnace between the mean square error and the number of measurements taken. The approximate formula for them is $10n^{-1.537}$. 
+
+To run a similar test on my work, I did 
 
 
 ## Analysis of Results
@@ -308,13 +310,10 @@ By running through both of these for-loops we are inching closer towards an answ
 ### Future ideas/work
 
 
-### Quetions to ask Professor: 
-- what is recovery usign GFs?
-- how to make sure my autoencoder is working well?
-- talk a little about the algorithm and what is happening there?
-- what is each part in the 
 
-# Progress (10/12)
+
+# Progress (10/19)
 - how to check if my autoencoder is working proplerly and steps after that 
 - implementing the PGD algorithm
+- showing side by side comparisons of fixed images
 
