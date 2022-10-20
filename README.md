@@ -47,8 +47,10 @@ We end up with the following:
 import matplotlib.pyplot as plt
 import numpy as np
 
-list1 = []
-list2 = []
+# we can use random number generator for this
+list1 = [1.3, 4.7, 3.2, 4.9, 1.5, 2.4]
+
+#list2 = []
 
 # for the additive noise, we have to use the random guassian variable function
 # for the multiplicative noise, we have to choose 
@@ -57,6 +59,9 @@ additiveWhiteGuassianNoise =
 multiplicativeSpeckleNoise = 
 
 # calculate your functions here
+
+xpoints = [0, 1, 2, 3, 4, 5]
+ypoints = list1*multiplicativeSpeckleNoise + additiveWhiteGuassianNoise
 
 plt.plot(xpoints, ypoints)
 plt.show()
