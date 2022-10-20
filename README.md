@@ -106,6 +106,18 @@ Autoencoders don't have a specific defintion but they are capable of reducing th
 - Reconstruction Loss
   * the method that measures measure how well the decoder is performing and how close the output is to the original input.
 
+Here is an image depicting the way autoencoders work. This image shows a one-layer design, but a lot of autoencoders can have many more than a single layer.
+
+<p align="center">
+  <img 
+    width="464"
+    height="328"
+    src="https://github.com/akhilvreddy/ECE491/blob/main/ourimage.png"
+  >
+</p>
+
+
+
 Autoencoders are the biggest tools that allow us to solve inverse problems. The way we are going to solve the vector equation is by trying to inverse it, kind of like an algebraic equation, but we cannot do the same elementary operations for a vector equation involving matrices. 
 
 ```
