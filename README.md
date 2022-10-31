@@ -42,6 +42,21 @@ Ignoring $A$ for now, we can just set it equal to 1.
 
 We end up with the following: 
 ```
+from sklearn.datasets import load_sample_image
+from sklearn.feature_extraction import image
+import numpy as np
+from matplotlib import pyplot as plt
+import cv2
+from google.colab import drive
+
+drive.mount('/content/drive')
+
+# this is my code from google colab, I ended out of RAM space so switched to local hosted Jupyter notebook
+
+input_img1 = "/content/drive/MyDrive/Colab Notebooks/im1_pn_normal.jpeg"
+# zero means greyscale, empty means RGB
+img1 = cv2.imread(input_img1,0)
+
 # IN PYTHON 3
 
 import matplotlib.pyplot as plt
