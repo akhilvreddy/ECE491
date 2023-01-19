@@ -1,4 +1,4 @@
-# Special Topics - ECE 491
+# ECE 491, Special Topics 
 
 ## Introduction
 The main goal of this research is to recover signals in the presence of Speckle Noise. The way this can be done is using Machine Learning, Autoencoders, and algorithms based off that. The code I have will be outlined below. 
@@ -8,13 +8,15 @@ Speckle noise is defined as "granular noise texture degrading the quality as a c
 
 <p align="center">
   <img 
-    width="504"
+    width="504"![image](https://user-images.githubusercontent.com/101938119/213531956-b93fa33c-a87f-4f3e-830c-e5490dda9a38.png)
+
     height="228"
     src="https://github.com/akhilvreddy/ECE491/blob/main/2-Figure1-1.png"
   >
 </p>
 
-The goal here is to get from an image that looks like the one on the right (which is what we currently get in SAR and OCT imaging) to something like the image on the left. 
+The goal here is to get from an image that looks like the one on the right (which is what we currently get in SAR and OCT imaging) to something like the image on the left. ![image](https://user-images.githubusercontent.com/101938119/213531959-61496e6f-abce-4d1b-a72d-9b925ac867f8.png)
+
 
 In essence, we are trying to remove the granular part of the image for better resolution.  
 
